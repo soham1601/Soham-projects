@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+    <title>
+        STUDENT DETAILS
+    </title>
+    <style>
+        th{
+         border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <table cellspacing="8" style="border: 1px solid black;">
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>
+                Roll_No
+            </th>
+            <th>
+                WAD
+            </th>
+            <th>
+                DSBDA
+            </th>
+            <th>
+                CNS
+            </th>
+            <th>
+                CC
+            </th>
+            <th>
+                AI
+            </th>
+	   </tr>
+       <% for(var i=0; i<data.length; i++) {%>
+        <tr>
+          <td>
+            <%= data[i].Name%>
+          </td>
+          <td>
+            <%= data[i].Roll_No%>
+          </td>
+          <td>
+            <%= data[i].WAD%>
+          </td>
+          <td>
+            <%= data[i].DSBDA%>
+          </td>
+          <td>
+            <%= data[i].CNS%>
+          </td>
+          <td>
+            <%= data[i].CC%>
+          </td>
+          <td>
+            <%= data[i].AI%>
+          </td>
+        </tr>
+     <% } %>
+    </table>
+</body>
+
+</html>

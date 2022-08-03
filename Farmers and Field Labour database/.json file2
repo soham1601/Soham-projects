@@ -1,0 +1,34 @@
+GET /fieldlabour/
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "id": 1,
+        "firstname": "ajay",
+        "lastname": "d",
+        "emp_id": 76,
+        "age": 24,
+        "status": "avaliable",
+        "work_Skills": "transplantation",
+        "work_Experience": "5",
+        "perfomance": "better",
+        "phone_number": "9523652366",
+        "address": "budugumpa"
+    },
+    {
+        "id": 2,
+        "firstname": "rakesh",
+        "lastname": "d",
+        "emp_id": 987,
+        "age": 28,
+        "status": "sold",
+        "work_Skills": "harvester",
+        "work_Experience": "10",
+        "perfomance": "best",
+        "phone_number": "9856523322",
+        "address": "karatigii"
+    }
+]

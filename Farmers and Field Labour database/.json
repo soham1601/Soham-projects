@@ -1,0 +1,62 @@
+HTTP 200 OK
+Allow: GET, POST, HEAD, OPTIONS
+Content-Type: application/json
+Vary: Accept
+
+[
+    {
+        "id": 1,
+        "firstname": "rajesh",
+        "lastname": "s",
+        "farmer_id": 123,
+        "age": 35,
+        "work_Skills_Required": "Transplantation",
+        "work_Experience_Required": "7-8",
+        "stipend": 300,
+        "phone_number": "9999999999"
+    },
+    {
+        "id": 2,
+        "firstname": "narasappa",
+        "lastname": "t",
+        "farmer_id": 124,
+        "age": 34,
+        "work_Skills_Required": "tractor Driver",
+        "work_Experience_Required": "5",
+        "stipend": 500,
+        "phone_number": "9988987954"
+    },
+    {
+        "id": 3,
+        "firstname": "suresh",
+        "lastname": "f",
+        "farmer_id": 768,
+        "age": 26,
+        "work_Skills_Required": "Threshing",
+        "work_Experience_Required": "5-6",
+        "stipend": 200,
+        "phone_number": "9856745892"
+    },
+    {
+        "id": 4,
+        "firstname": "ganesh",
+        "lastname": "a",
+        "farmer_id": 238,
+        "age": 28,
+        "work_Skills_Required": "land prepration",
+        "work_Experience_Required": "5",
+        "stipend": 500,
+        "phone_number": "9889622323"
+    },
+    {
+        "id": 5,
+        "firstname": "niranjan",
+        "lastname": "d",
+        "farmer_id": 865,
+        "age": 36,
+        "work_Skills_Required": "diary",
+        "work_Experience_Required": "3",
+        "stipend": 50,
+        "phone_number": "9852653636"
+    }
+]
