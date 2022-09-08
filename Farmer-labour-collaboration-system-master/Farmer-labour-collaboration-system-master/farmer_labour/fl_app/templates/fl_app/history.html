@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>History</h2>
+
+<hr>
+<h3>As-Farmer</h3>
+<h3>past-History</h3>
+    <a href="{%url 'fl_app:mainpage' %} " >goback</a>
+<div>
+
+
+<table>
+  <tr>
+
+    <th>labour-name</th>
+    <th>work-type</th>
+    <th>start-date</th>
+      <th>end-date</th>
+          <th>click</th>
+
+
+  </tr>
+
+
+    <p>paeros id here is id in relation1 model</p>
+
+    {% for i in asf %}
+<form method="post" action="{% url 'fl_app:remove' i.id %}">
+  <tr>
+
+    <td>{{i.lname}}</td>
+    <td>{{i.typework}}</td>
+      <td>{{i.startdate}}</td>
+
+      <td>{{i.enddate}}</td>
+
+<td style="width:2%"><button type="submit"
+                style="font-size:15pt;color:white;background-color:green;border:2px
+                solid #336600;padding:3px">
+      Remove  </button> </td>
+  </tr>
+</form>
+
+
+    {% endfor %}
+
+
+</table>
+
+</div>
+
+
+
+
+<div>
+
+
+<table>
+  <tr>
+
+    <th>labour-name</th>
+    <th>work-type</th>
+    <th>start-date</th>
+      <th>end-date</th>
+          <th>click</th>
+
+
+  </tr>
+
+
+    <p>paeros id here is id in relation1 model</p>
+
+    {% for i in asl %}
+  <tr>
+
+    <td>{{i.fname}}</td>
+    <td>{{i.typework}}</td>
+      <td>{{i.startdate}}</td>
+
+      <td>{{i.enddate}}</td>
+  </tr>
+</form>
+
+
+    {% endfor %}
+
+
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+</body>
+</html>

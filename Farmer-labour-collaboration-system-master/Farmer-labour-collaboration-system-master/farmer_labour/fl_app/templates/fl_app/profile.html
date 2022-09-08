@@ -1,0 +1,53 @@
+
+{% extends "fl_app/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-success" style="height:40px">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <a class="navbar-brand" href="#" style="color:orange">
+            farmer-labour-management
+        </a>
+
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+
+
+
+            <li class="nav-item">
+                <a href="#" class="nav-link"><b style="color:orange">Logout </b></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+<div>
+
+    <form method="post" action="{%url 'fl_app:updateprofile'%}">
+
+
+        {{u_form |crispy}}
+        {{p_form |crispy}}
+
+
+    <button type="submit" class="btn btn-primary">save</button>
+    </form>
+
+
+
+</div>
+
+{% endblock content %}
+
+

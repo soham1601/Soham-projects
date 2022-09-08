@@ -1,0 +1,107 @@
+
+{% extends "fl_app/base.html" %}
+
+{% block content %}
+
+
+
+<nav class="navbar navbar-expand-lg" style="height:40px;
+background-color:rgb(120, 118, 193)">
+    <div class="d-flex flex-grow-1">
+        <span class="w-100 d-lg-none d-block"><!-- hidden spacer to center brand on mobile --></span>
+        <a class="navbar-brand" href="#" style="color:orange">
+            farmer-labour-management
+        </a>
+
+        <div class="w-100 text-right">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar7">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </div>
+    <div class="collapse navbar-collapse flex-grow-1 text-right" id="myNavbar7">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+
+
+
+
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:availfarmers' %}"  class="nav-link">
+                    <b style="color:orange"> available-farmers </b></a>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:availlabours' %}"  class="nav-link">
+                    <b style="color:orange"> available-labours </b></a>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:reqfarmers' %}"  class="nav-link">
+                    <b style="color:orange"> RequestToFarmers</b></a>
+            </li>
+
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:reqlabours' %}"  class="nav-link">
+                    <b style="color:orange"> RequestToLabours </b></a>
+            </li>
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:history' %}"  class="nav-link">
+                    <b style="color:orange"> History </b></a>
+            </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <li class="nav-item">
+                <a href="{% url 'fl_app:updateprofile' %}"  class="nav-link">
+                    <b style="color:orange"> profile </b></a>
+            </li>
+            <li class="nav-item">
+                <a href="{% url 'logout' %}" class="nav-link"><b style="color:orange">Logout </b></a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+{% endblock content %}
+
+
+
+

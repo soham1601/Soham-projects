@@ -1,0 +1,88 @@
+
+{% extends "fl_app/base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content1 %}
+
+<style>
+#a{
+
+ width:200px;height:455px;
+  background-color: white;font-size: 16px;color:green;margin-left: 330px;
+  margin-right:80px;margin-top:10px;border-radius: 25px;
+  border: 2px solid black;padding: 15px 5px 25px 95px;"
+}
+.note
+{
+    text-align: center;
+    height: 60px;
+    background: -webkit-linear-gradient(left, #0072ff, #8811c5);
+    color: #fff;
+    font-weight: bold;
+    line-height: 80px;
+}
+
+</style>
+
+{% endblock content1 %}
+
+
+{% block content %}
+<div class="note">
+                    <p>Welcome </p>
+                </div>
+
+
+
+<div style="width:55%;color:green;border;" id="a">
+
+<div class="content-section" >
+        <form method="POST" action="{%url 'fl_app:register' %}">
+            {% csrf_token %}
+
+            <div style="width:70%">
+                    <div class="form-row">
+
+                        <div class="form-group col-md-6 mb-0" >
+                        {{ form.username|as_crispy_field }}
+                        </div>
+
+                        <div class="form-group col-md-6 mb-0" style="width:10%">
+                        {{ form.email|as_crispy_field }}
+
+                        </div>
+                    </div>
+            </div>
+
+            <div style="width:70%">
+                <div class="form-row">
+
+                    <div class="form-group col-md-6 mb-0" >
+                    {{ form.password1|as_crispy_field }}
+                    </div>
+
+                    <div class="form-group col-md-6 mb-0" style="width:10%">
+                        {{ form.password2|as_crispy_field }}
+
+                    </div>
+
+                </div>
+
+            </div>
+
+<pre>
+                    <button type="submit" class="btn btn-primary" >Signup</button>
+        </pre>
+     </form>
+
+        <div class="border-top pt-1">
+            <small class="text-muted">
+                Already Have An Account? <a class="ml-1" href="#">Sign In</a>
+            </small>
+        </div>
+</div>
+
+
+</div>
+
+{% endblock content %}
